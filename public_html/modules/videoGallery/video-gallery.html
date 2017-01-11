@@ -1,0 +1,37 @@
+<div class="image-gallery browser-screen-height">
+<h1 class="image-galley-title">{{vm.title}}</h1>
+
+<a ng-show="vm.prevState.name != '' " class="fa fa-arrow-left" 
+   ui-sref="{{vm.prevState.name != '' ? vm.prevState.name : '.'}}" value="previous page" 
+   aria-hidden="true" style="font-size:50px;float:right;margin-top: -95px;">
+</a>
+
+<div class="imageBox">
+    <div ng-show="vm.videoFlag">
+        
+         <div ng-show="vm.videoObj.id != vm.firstElement.id">
+        <a class="fa fa-arrow-left left-arrow" href="" ng-click="vm.prvImage(vm.videoObj)" value="previous image" aria-hidden="true"></a>
+        </div>
+        
+        <iframe class="youtube-player" type="text/html" ng-src="{{vm.trustSrc(vm.videoObj.src)}}" allowfullscreen frameborder="0">
+        </iframe>
+        
+        <div ng-show="vm.videoObj.id != vm.lastElement.id">
+        <a class="fa fa-arrow-right right-arrow" href="" ng-click="vm.nxtImage(vm.videoObj)" value="next image" aria-hidden="true"></a>
+        </div>
+    </div>
+    
+     <div ng-show="! vm.videoFlag">
+        <i class="fa fa-arrow-down" style="font-size: 250px; color: rgba(237, 234, 234, 0.87); margin-left: 173px;"></i>
+    </div>
+</div>
+
+<div class="image-galley-footer">
+    <ul ng-scrollable class="scroll-bar" >
+        <li style="display: inline;" ng-repeat="video in vm.videoData track by video.id">
+        <cu-image col-size="2" image-src="{{video.imagSrc}}" ng-click="vm.open(video)" />
+        </li>
+    </ul>
+</div>
+
+</div>

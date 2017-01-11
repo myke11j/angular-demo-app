@@ -1,0 +1,7 @@
+{
+    "states": [
+        {"name":"texas", "id": 1},
+         {"name":"Illinois", "id": 2},
+          {"name":"Nevada", "id": 3}
+    ]
+}

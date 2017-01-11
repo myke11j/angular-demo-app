@@ -1,0 +1,10 @@
+<div class="form-inline">
+    <div class="form-group">
+        <label class="lead" for="search">Search for Paras</label>
+        <input type="text" ng-model="vm.searchPara" class="form-control" id="search" placeholder="Find City" ng-change="vm.findParas()">
+    </div>
+</div>
+
+<div class="paras" ng-repeat="para in vm.filteredPara">
+  <span>{{para.text}}</span><hr>
+</div>

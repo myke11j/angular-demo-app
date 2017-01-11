@@ -1,0 +1,13 @@
+<body>
+   
+    <div class="col-md-8 col-md-offset-2">
+    <uib-accordion>
+        <div ng-repeat="titleObject in titleArray">
+            <uib-accordion-group heading="{{titleObject.title}}"  ng-click="readDescription(titleObject.id)">
+            {{titleDescription}}
+        </uib-accordion-group>    
+        </div>
+    </uib-accordion>
+    </div>
+</body>
+

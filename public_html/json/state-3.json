@@ -1,0 +1,7 @@
+{
+    "states": [
+        {"name":"Ottawa", "id": 1},
+         {"name":"Torranto", "id": 2},
+          {"name":"Montreal", "id": 3}
+    ]
+}

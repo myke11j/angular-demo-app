@@ -1,0 +1,7 @@
+{
+    "states": [
+        {"name":"Delhi", "id": 1},
+         {"name":"UP", "id": 2},
+          {"name":"UK", "id": 3}
+    ]
+}

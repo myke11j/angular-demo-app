@@ -1,0 +1,45 @@
+
+    <div class="form-inline">
+        <div class="form-group">
+            <label class="lead" for="search">Search</label>
+            <input type="text" ng-model="searchCity" class="form-control" id="search" placeholder="Find City">
+        </div>
+        <button  class="btn btn-default" ng-click="vm.open()">Add City</button>
+    </div>
+
+    <div ng-if="$root.cityData.length > 0" class="row">
+        <div class="col-md-6">
+            <table class="table table-hover">
+
+<!--                <thead>
+                <table-header src="vm.headers"></table-header>
+                </thead>-->
+            
+                <thead>
+                <td ng-repeat="header in vm.headers">
+                    <a href="" ng-click="vm.sortType = header.field;  vm.sortReverse = !vm.sortReverse">
+                        {{header.label}}
+                        <span ng-show="vm.sortType == header.field && !vm.sortReverse" 
+                            ng-class="vm.sortReverse ? 'fa fa-caret-up' : 'fa fa-caret-down'">
+                        </span>
+                    </a>
+                </td>
+                </thead>
+               
+            
+                <tr ng-repeat="city in $root.cityData |  orderBy:vm.sortType:vm.sortReverse | filter: searchCity" >
+                    <td>{{city.name}}</td>
+                    <td>{{city.state}}</td>
+                    <td>{{city.country}}</td>
+                    <td>{{city.pincode}}</td>
+                    <td><button value="delete" ng-click="vm.deleteCity(city)" >Delete record</button></td>
+                    <td><button value="edit" ng-click="vm.updateCity(city)" >Edit record</button></td>
+                </tr>
+            
+            </table>
+        </div>
+    </div>
+
+
+
+

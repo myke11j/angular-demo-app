@@ -1,0 +1,20 @@
+<!--<tr>
+<div ng-repeat="header in src track by header.field">
+<td>
+   {{header.label}}
+</td>
+</div>
+</tr>-->
+
+<thead>
+<div ng-repeat="header in src track by header.id">
+<td>
+    <a href="" ng-click="vm.sortType = header.field;  vm.sortReverse = !vm.sortReverse">
+        {{header.label}}
+        <span ng-show="vm.sortType == header.field && !vm.sortReverse" 
+              ng-class="vm.sortReverse ? 'fa fa-caret-up' : 'fa fa-caret-down'">
+        </span>
+    </a>
+</td>
+</div>
+</thead>

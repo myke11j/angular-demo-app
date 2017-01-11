@@ -1,0 +1,106 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.cuImage {
+    padding-left: 50px;
+    padding-top: 15px;
+    position: relative;
+}
+
+.image-gallery {
+    width: auto;
+    height: auto;
+    background-color: black;
+    margin-top: -30px;
+    overflow:  hidden;
+}
+
+.browser-screen-height {
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+
+.image-galley-title {
+    text-align: center;
+    padding-top: 5%;
+    color: rgba(237, 234, 234, 0.87);
+}
+
+
+.cu-loading-icon {
+    font-size:224px !important;
+    margin-left: 40%  !important;
+    margin-top: 5% !important;
+}
+
+.cu-loading-title {
+    font-size:90px !important;
+    margin-left: 20%  ;
+    top: 10%;
+}
+
+.cu-image-loading-icon {
+    margin-left: 53px;
+    margin-top: 30px;
+    position: absolute;
+    z-index: 1;
+}
+
+.imageBox {
+    display:  block;
+    height:  360px;
+    width: 50%;
+    margin-left: 25% ;  
+    text-align: center;
+}
+
+.imageLayout {
+    display:  block;
+    height:  360px;
+    margin-left: 25% ;
+    text-align: center;
+    text-align: center;
+}
+
+.image-galley-footer {
+    position: relative;
+    top: -100px;
+}
+
+
+.none-class {
+    
+}
+
+.youtube-player {
+    width: 100%;
+    height: 350px;
+}
+.scroll-bar {
+    width: 710px; height: 170px; white-space: nowrap; border: 0; padding: 10px;
+    margin: 100px auto; 
+}
+
+.active {
+    background-color: #64FFDA;
+}
+
+.main {
+    margin-left: 240px;
+}
+
+.right-arrow {
+    font-size: 50px !important; top: 50% ; right: 100px;position: absolute;
+}
+
+.left-arrow {
+    font-size: 50px !important; top: 50% ; left: 100px;position: absolute;
+}
+
+

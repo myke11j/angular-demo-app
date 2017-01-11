@@ -1,0 +1,78 @@
+
+
+
+
+<div>
+<div class="modal-header">
+    <h3 class="modal-title"> Cities</h3>
+</div>
+<div class="modal-body">
+    <form class="form-horizontal" name="modalForm">
+        <div class="form-group row">
+            <label for="cityName" class="col-sm-2 control-label">Name of City</label>
+            <div class="col-sm-10">
+                <input type="text" name="cityName" ng-model="name" ng-bind="cityFields.name" 
+                       class="form-control" id="cityName" placeholder="city name"
+                        required>
+            </div>
+        </div>
+        <form-warning element-name="cityName"></form-warning>
+
+        
+        <div class="form-group row">
+        <label for="dropDownCountry" class="col-sm-2 control-label">Name of Country</label>
+        <div class="col-sm-10">
+            
+            <select class="select_box form-control"  name="country_drop_down" ng-model="selectedCountry" 
+                    id="dropDownCountry" 
+                    ng-options="country as country.name for country in countries track by country.id"  
+                    ng-value="country.id" ng-change="addStates(selectedCountry)" 
+                    required>
+                
+               <option value="">--select a country--</option>
+            </select>
+            
+        </div>
+        </div>
+        
+        <form-warning element-name="country_drop_down"></form-warning>
+
+        
+        <div class="form-group row">
+        <label for="dropDownState" class="col-sm-2 control-label">Name of State</label>
+        <div class="col-sm-10">
+            <select class="select_box form-control" ng-model="selectedState" name="state_drop_down" 
+                    id="dropDownState" 
+                    ng-options="state as state.name for state in states track by state.id"  
+                    ng-value="state.id"  required>
+                
+                <option value="">--select a state--</option>
+            </select>
+        </div>
+        </div>
+        
+        <form-warning element-name="state_drop_down"></form-warning>
+        
+        <div class="form-group row">
+            <label for="pincode" class="col-sm-2 control-label">Pincode</label>
+            <div class="col-sm-10">
+                <input name="pincode" type="number" ng-model="pincode" class="form-control" id="pincode" placeholder="pincode" required>
+            </div>
+        </div>
+        <form-warning element-name="pincode"></form-warning>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" ng-disabled="modalForm.$invalid" ng-click="addCity()" class="btn btn-default">Add</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+</div>
+</div>
+
+
+
+

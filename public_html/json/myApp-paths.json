@@ -1,0 +1,28 @@
+{
+    "paths": [
+        {
+            "path": "/gallery",
+            "id": 1
+        },
+        {
+            "path": "/city",
+            "id": 2
+        },
+        {
+            "path": "/images",
+            "id": 3
+        },
+        {
+            "path": "/video",
+            "id": 4
+        },
+        {
+            "path": "/accordion",
+            "id": 5
+        },
+        {
+            "path": "/me",
+            "id": 6
+        }
+    ]
+}

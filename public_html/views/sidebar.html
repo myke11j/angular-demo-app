@@ -1,0 +1,62 @@
+  <aside class="main-sidebar">
+     <!--sidebar: style can be found in sidebar.less--> 
+    <section class="sidebar">
+       <!--Sidebar user panel--> 
+      <div class="user-panel" ng-class="{ 'active' : $root.activePage == '/me' }">
+        <div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Alexander Pierce</p>
+          <a ui-sref="root.sidebar.myProfile"><i class="fa fa-circle text-success"></i> My Profile</a>
+        </div>
+      </div>
+       <div class="user-panel" ng-class="{ 'active' : $root.activePage == '/accordion' }">
+        <div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="Accorion">
+        </div>
+        <div class="pull-left info">
+          <p>Accordion</p>
+          <a ui-sref="root.sidebar.accordion"><i class="fa fa-circle text-success"></i> Accordion</a>
+        </div>
+      </div>
+      <div class="user-panel" ng-class="{ 'active' : $root.activePage == '/gallery' }">
+        <div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="Gallery">
+        </div>
+        <div class="pull-left info">
+          <p>Gallery</p>
+          <a ui-sref="root.sidebar.gallery"><i class="fa fa-circle text-success"></i> Gallery</a>
+        </div>
+      </div>
+      <div class="user-panel" ng-class="{ 'active' : $root.activePage == '/city' }">
+        <div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="Cities">
+        </div>
+        <div class="pull-left info">
+          <p>City</p>
+          <a ui-sref="root.sidebar.city"><i class="fa fa-circle text-success"></i> City</a>
+        </div>
+      </div>
+       <div class="user-panel" ng-class="{ 'active' : $root.activePage == '/images' }">
+        <div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="Image Gallery">
+        </div>
+        <div class="pull-left info">
+          <p>Image Gallery</p>
+          <a ui-sref="imageGallery"><i class="fa fa-circle text-success"></i> Image Gallery</a>
+        </div>
+      </div>
+       <div class="user-panel" ng-class="{ 'active' : $root.activePage == '/videos' }">
+        <div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="Video Gallery">
+        </div>
+        <div class="pull-left info">
+          <p>Video Gallery</p>
+          <a ui-sref="videoGallery"><i class="fa fa-circle text-success"></i> Video Gallery</a>
+        </div>
+      </div>
+     
+    </section>
+     <!--/.sidebar--> 
+  </aside>
